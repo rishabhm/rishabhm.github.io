@@ -1,0 +1,260 @@
+body {
+	padding: 0;
+	margin: 0;
+	/*padding-top: 70px;*/
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 0 100px;
+	color: #555;
+	text-transform: uppercase;
+	height: 70px;
+	background-color: rgba(255,255,255,0.9);
+	z-index: 999; 
+}
+
+.menu a:link, 
+.menu a:visited {
+	color: #bbb;
+}
+
+.menu a {
+	letter-spacing: 2;
+	text-align: center;
+	display: inline-block;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	width: 10%;
+	color: #bbb;
+	line-height: 70px;
+}
+
+.menu a:hover,
+.menu a:active {
+	color: #555;
+}
+
+.row {
+	margin: 0;
+}
+
+.content_row {
+	padding-top: 70px;
+	height: 100%;
+}
+
+.home-col {
+	position: relative;
+	height: 100%;
+}
+
+.splash {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+	left: -10%;
+}
+
+.splash img {
+	/*width: 120%;*/
+	height: 90%;
+	-webkit-filter: grayscale(100%);
+	filter: gray;
+	filter: grayscale(1);
+	margin-left: -50px;
+	opacity: 1;
+	/*transition: margin-left 3s, opacity 4s;*/
+}
+
+
+
+.mhidden {
+	opacity: 0;
+	transition: opacity 2s;
+}
+
+.col {
+	background-color: #f00;
+}
+
+/* Parent container for the element that needs
+   to be vertically centered */
+.block {
+  text-align: center;
+  /*padding-left: 30%;*/
+  white-space: nowrap;
+}
+ 
+.block:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+  margin-top: -5%;
+}
+
+
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80%;
+  position: relative;
+}
+
+.dp {
+	border-radius: 200px;
+	/*-webkit-filter: grayscale(60%);
+	filter: gray;
+	filter: grayscale(1);*/
+	/*opacity: 0.95;*/
+	margin: 15px;
+	height: 125px;
+}
+
+.name {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	font-weight: 300;
+	line-height: 135%;
+	color: #000;
+	letter-spacing: 6;
+	width: 100%;
+	padding: 5px;
+	text-transform: uppercase;
+}
+
+.desc {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 135%;
+	color: #333;
+	letter-spacing: 6;
+	width: 100%;
+	text-transform: uppercase;
+}
+
+/*
+.name:before {
+	content: '';
+	position: absolute;
+	width: 35%;
+	border-bottom: 1px solid #ccc;
+	left: 0;
+	top: 169;
+}
+
+.name:after {
+	content: '';
+	position: absolute;
+	width: 35%;
+	border-bottom: 1px solid #ccc;
+	left: 65%;
+	top: 169;
+}*/
+
+.arrow_container {
+	position: relative;
+	margin-top: 100px;
+	width: 75px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bounce {
+  position:absolute;
+  /*left:50%;*/
+  bottom:0;
+  height:75px;
+  width:75px;
+  background:url(../resources/down_arrow.png);
+  background-size: cover;
+  -webkit-animation:bounce 2.5s infinite;
+  cursor: pointer;
+}
+
+@-webkit-keyframes bounce {
+  0%, 50%, 100%		{ bottom:0px; opacity: 0.5;}
+  25%, 75% 			{ bottom:10px; opacity: 0.75;}
+}
+
+.item_box {
+	display: inline-block;
+	width: 23%;
+}
+
+.section_title {
+	/*height: 100%;*/
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 1000;
+	font-family: 'Oswald', sans-serif;
+	font-size: 3em;
+	vertical-align: middle;
+	padding-top: 25%;
+}
+
+.item {
+	position: relative;
+	background-color: #777;
+	/*background: url('../resources/arch_splash.png');*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*outline: 3px solid #777;*/
+	height: 300px;
+	background-clip: content-box;
+	padding: 10px;
+}
+
+.item_cover {
+	position: absolute;
+	opacity: 0.75;
+	height: 100%;
+	width: 100%;
+	background: url('../resources/gradient.png');
+	background-position: 0 200; /*Disappears at 1000%*/
+	background-repeat-y: no-repeat;
+	background-size: 20px 100%;
+	/*background-color: rgba(0,0,0,0.25);*/
+	background-clip: content-box;
+	padding:10px;
+	top: 0px;
+	left: 0px;
+	/*transition: top 1s, opacity 0.5s;*/
+	transition: background-position 0.75s;
+}
+
+.item_cover:hover {
+	background-position: 0 0;
+}
+
+.item_cover:hover + .item_desc {
+	opacity: 1;
+}
+
+.item_desc {
+	cursor: pointer;
+	width: 100%;
+	padding-right: 30px;
+	text-align: right;
+	position: absolute;
+	color: #fff;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 2em;
+	top: 70%;
+	/*left: 20;*/
+	opacity: 0;
+	transition: opacity 0.5s;
+	pointer-events: none;
+}
+
+.col-lg-3 {
+	height: 300px;
+}
