@@ -11,10 +11,11 @@
 }
 
 .item {
+	display: inline-block;
 	position: relative;
 	background-color: #777;
 	/*background: url('../resources/arch_splash.png');*/
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 	/*outline: 3px solid #777;*/
 	height: 300px;

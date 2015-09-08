@@ -13,7 +13,8 @@ body {
 	text-transform: uppercase;
 	height: 70px;
 	background-color: rgba(255,255,255,0.9);
-	z-index: 999; 
+	z-index: 999;
+	/*text-align: center;*/
 }
 
 .menu a:link, 
@@ -24,11 +25,12 @@ body {
 .menu a {
 	letter-spacing: 2;
 	text-align: center;
-	display: inline-block;
+	display: inline;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	width: 10%;
 	color: #bbb;
 	line-height: 70px;
+	margin: 0 10px;
 }
 
 .menu a:hover,
@@ -38,11 +40,12 @@ body {
 
 .row {
 	margin: 0;
+	/*text-align: center;*/
 }
 
 .content_row {
 	padding-top: 70px;
-	height: 100%;
+	min-height: 100%;
 }
 
 .home-col {
@@ -185,8 +188,17 @@ body {
 }
 
 .item_box {
+	/*position: relative;*/
 	display: inline-block;
-	width: 23%;
+	width: 30%;
+	margin: 5px 1%;
+	/*border: 1px solid #000;*/
+	height: 300px;
+	vertical-align: top;
+}
+
+a {
+	text-decoration: none;
 }
 
 .section_title {
@@ -198,19 +210,22 @@ body {
 	font-family: 'Oswald', sans-serif;
 	font-size: 3em;
 	vertical-align: middle;
-	padding-top: 25%;
+	margin-top: 15px;
+	height: 150px;
+}
+
+.project {
+	background-color: #777;
 }
 
 .item {
 	position: relative;
-	background-color: #777;
 	/*background: url('../resources/arch_splash.png');*/
-	background-size: cover;
+	background-size: auto;
 	background-repeat: no-repeat;
 	/*outline: 3px solid #777;*/
-	height: 300px;
+	height: 100%;
 	background-clip: content-box;
-	padding: 10px;
 }
 
 .item_cover {
@@ -224,7 +239,7 @@ body {
 	background-size: 20px 100%;
 	/*background-color: rgba(0,0,0,0.25);*/
 	background-clip: content-box;
-	padding:10px;
+	/*padding:10px;*/
 	top: 0px;
 	left: 0px;
 	/*transition: top 1s, opacity 0.5s;*/
@@ -241,20 +256,68 @@ body {
 
 .item_desc {
 	cursor: pointer;
-	width: 100%;
+	width: 95%;
 	padding-right: 30px;
 	text-align: right;
 	position: absolute;
 	color: #fff;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 2em;
-	top: 70%;
+	font-size: 1.2em;
+	top: 60%;
 	/*left: 20;*/
 	opacity: 0;
 	transition: opacity 0.5s;
 	pointer-events: none;
+	text-transform: uppercase;
+}
+
+.item_desc p {
+	font-size: 1.5em;
+	padding: 0;
+	margin: 0;
 }
 
 .col-lg-3 {
 	height: 300px;
+}
+
+.title_col{
+	width: 25%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.projects_col {
+	display: inline-block;
+	width: 75%;
+	/*text-align: center;*/
+}
+
+@media (max-width: 1200px) {
+	.projects_col, .title_col {
+		display: block;
+		width: 100%;
+	}
+}
+
+@media (max-width: 1050px) {
+	.item_box {
+		width: 47%;
+		margin: 5px 0.9%;
+	}
+	.menu {
+		text-align: center;
+		padding: 0;
+	}
+}
+@media (max-width: 700px) {
+	.item_box {
+		min-width: 350px;
+		width: 75%;
+		margin: 5px 0.9%;
+	}
+
+	.projects_col {
+		text-align: center;
+	}
 }

@@ -15,7 +15,6 @@ $(document).ready(function () {
 })
 
 function autoScroll(target, time, speed) {
-	
 	setTimeout(function () {
 		$('html, body').animate({
 	        scrollTop: $("a[name='"+target+"']").offset().top
