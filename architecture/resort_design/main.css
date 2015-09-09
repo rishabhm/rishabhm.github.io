@@ -28,7 +28,8 @@ body {
 
 .project_title {
 	font-size: 30px;
-	font-family: 'Dancing Script', cursive;
+	/*font-family: 'Dancing Script', cursive;*/
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;	
 	margin-top: 20px;
 	/*background: url("../splash/fy_1.png");
 	background-size: cover;*/
