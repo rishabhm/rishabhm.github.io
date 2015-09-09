@@ -190,8 +190,8 @@ body {
 .item_box {
 	/*position: relative;*/
 	display: inline-block;
-	width: 30%;
-	margin: 5px 1%;
+	width: 300px;
+	margin: 10px;
 	/*border: 1px solid #000;*/
 	height: 300px;
 	vertical-align: top;
@@ -262,8 +262,8 @@ a {
 	position: absolute;
 	color: #fff;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 1.2em;
-	top: 60%;
+	font-size: 1.1em;
+	top: 70%;
 	/*left: 20;*/
 	opacity: 0;
 	transition: opacity 0.5s;
@@ -272,7 +272,7 @@ a {
 }
 
 .item_desc p {
-	font-size: 1.5em;
+	font-size: 1.3em;
 	padding: 0;
 	margin: 0;
 }
