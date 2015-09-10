@@ -189,12 +189,23 @@ body {
 
 .item_box {
 	/*position: relative;*/
+	-webkit-filter: grayscale(100%);
+	filter: gray;
+	filter: grayscale(1);
 	display: inline-block;
-	width: 300px;
-	margin: 10px;
+	width: 350px;
+	/*margin: 10px;*/
 	/*border: 1px solid #000;*/
-	height: 300px;
+	height: 350px;
 	vertical-align: top;
+	transition: 1s ease-in-out;
+}
+
+.item_box:hover {
+	-webkit-filter: grayscale(0%);
+	filter: gray;
+	filter: grayscale(1);
+	transition: 1s ease-in-out;
 }
 
 a {
@@ -230,12 +241,12 @@ a {
 
 .item_cover {
 	position: absolute;
-	opacity: 0.75;
+	opacity:0;
 	height: 100%;
 	width: 100%;
-	background: url('../resources/gradient.png');
-	background-position: 0 200; /*Disappears at 1000%*/
-	background-repeat-y: no-repeat;
+	/*background: url('../resources/gradient.png');
+	background-position: 0 200;
+	background-repeat-y: no-repeat;*/
 	background-size: 20px 100%;
 	/*background-color: rgba(0,0,0,0.25);*/
 	background-clip: content-box;
@@ -243,11 +254,25 @@ a {
 	top: 0px;
 	left: 0px;
 	/*transition: top 1s, opacity 0.5s;*/
-	transition: background-position 0.75s;
+	transition: background-position 0.75s, opacity 1s ease-in-out;
 }
 
+.item_cover:nth-of-type(3n) {
+	background-color: #0080ff;
+}
+
+.item_cover:nth-of-type(3n+1) {
+	background-color: #ff0080;
+}
+
+.item_cover:nth-of-type(3n+2) {
+	background-color: #80ff00;
+}
+
+
 .item_cover:hover {
-	background-position: 0 0;
+	/*background-position: 0 0;*/
+	opacity: 0.6;
 }
 
 .item_cover:hover + .item_desc {

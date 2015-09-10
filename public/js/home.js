@@ -11,6 +11,7 @@ $(document).ready(function () {
 
 	// detect_item_hover();
 	populate_images();
+	set_background_covers();
 	// autoScroll('projects_anchor', 1000, 1000)
 })
 
@@ -40,5 +41,15 @@ function detect_item_hover() {
 	$('.item').on('mouseout', function () {
 		var $item = $(this)
 		$item.find('.item_cover').css('background-position', '0 100');
+	})
+}
+
+function set_background_covers() {
+	// var colors = ['#000'];//['#80ff00', '#ff0080', '#0080ff'];
+	var colors = ['#ff0080', '#0080ff'];
+	var idx=0;
+	$('.item_cover').each(function (i, o) {
+		$(o).css('background-color', colors[idx]);
+		idx = (idx+1)%colors.length;
 	})
 }
