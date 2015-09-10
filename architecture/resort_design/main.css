@@ -25,7 +25,7 @@ body {
     width:auto;
     height:100%;
     /*background:red;*/
-    overflow:hidden;
+    overflow: scroll;
     text-align: center;
 }
 .left_col {
@@ -243,4 +243,18 @@ body {
     height: 16px;
     border-right: 4px solid #ccc;
     border-left: 4px solid #ccc;
+}
+
+.scroll_images {
+	width: 100%;
+	/*height: 100%;*/
+	/*overflow: scroll;*/
+	/*text-align: center;*/
+	text-align: left;
+}
+
+.scroll_images img {
+	width: calc(100% - 20px);
+	display: inline-block;
+	margin: 0 10px;
 }
