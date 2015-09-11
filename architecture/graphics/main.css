@@ -250,11 +250,25 @@ body {
 	/*height: 100%;*/
 	/*overflow: scroll;*/
 	/*text-align: center;*/
-	text-align: left;
+	text-align: center;
 }
 
 .scroll_images img {
-	width: calc(100% - 20px);
+	max-width: calc(100% - 20px);
 	display: inline-block;
 	margin: 0 10px;
+	vertical-align: middle;
+}
+
+.scroll_image:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+  margin-top: -5%;
+}
+
+.scroll_image {
+	min-height: 100%;
 }
