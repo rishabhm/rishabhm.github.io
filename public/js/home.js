@@ -1,6 +1,6 @@
 var selected_charities = 0;
-// var colors = ['rgba(248,148,69,0.95)','rgba(232,76,60,0.95)','rgba(24,183,88,0.95)','rgba(31,159,202,0.95)']
-var colors = ['rgba(248,148,69,0.95)'];
+var colors = ['rgba(248,148,69,0.95)','rgba(232,76,60,0.95)','rgba(24,183,88,0.95)','rgba(31,159,202,0.95)']
+// var colors = ['rgba(248,148,69,0.95)'];
 
 $(document).ready(function () {
 
@@ -76,8 +76,10 @@ function set_background_covers() {
 	// var colors = ['f6ccef','f4dcf0'];
 	// var colors = ['rgba(248,148,69,0.95)','rgba(232,76,60,0.95)','rgba(24,183,88,0.95)','rgba(31,159,202,0.95)']
 	var idx=0;
-	$('.item_cover').each(function (i, o) {
-		$(o).css('background-color', colors[parseInt(Math.random()*colors.length)]);
+	$('.projects_col').each(function (i, p) {
+		$(p).find('.item_cover').each(function (i, o) {
+			$(o).css('background-color', colors[idx]);
+		})
 		idx = (idx+1)%colors.length;
 	})
 }

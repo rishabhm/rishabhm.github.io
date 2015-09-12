@@ -188,8 +188,9 @@ body {
 }
 
 .section_name {
-	margin-left: 25px;
+	/*margin-left: 25px;*/
 	margin-bottom: 10px;
+	text-align: center;
 }
 
 .item_box {
@@ -295,6 +296,7 @@ a {
 	text-align: right;
 	position: absolute;
 	color: #fff;
+	text-shadow: 2px 2px 1px #000;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1.1em;
 	top: 70%;
@@ -324,7 +326,7 @@ a {
 .projects_col {
 	display: inline-block;
 	width: 100%;
-	/*text-align: center;*/
+	text-align: center;
 }
 
 /*@media (max-width: 1200px) {
