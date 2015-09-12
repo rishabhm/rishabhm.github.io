@@ -25,6 +25,12 @@ $(document).ready(function () {
 		window.open($(this).attr('src'), '_blank');
 	})
 
+	setFooter();
+
+	$('.label').on('click', function () {
+		document.location.href = $(this).attr('url');
+	})
+
 	// $('.next').on('click', function () {
 	// 	moveImage(1);
 	// });
@@ -111,3 +117,7 @@ function pause() {
 	playing = false;
 }
 
+function setFooter() {
+	var footer_content = '<div class="name">tanya makker</div><div class="label" url="/index.html#splash_container">home</div><div class="label" url="/index.html#projects_container">projects</div><div class="label" url="/index.html#studies_container">studies</div><div class="label" url="/index.html#graphics_container">graphics</div><div class="label" url="/index.html#about_container">me</div>';
+	$('.footer').html(footer_content);
+}
