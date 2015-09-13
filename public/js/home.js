@@ -1,5 +1,6 @@
 var selected_charities = 0;
-var colors = ['rgba(248,148,69,0.95)','rgba(232,76,60,0.95)','rgba(24,183,88,0.95)','rgba(31,159,202,0.95)']
+// var colors = ['rgba(248,148,69,0.95)','rgba(232,76,60,0.95)','rgba(24,183,88,0.95)','rgba(31,159,202,0.95)']
+var colors = ['rgba(41,165,243,0.95)','rgba(7,218,196,0.95)','rgba(7,218,126,0.95)'];
 // var colors = ['rgba(248,148,69,0.95)'];
 
 $(document).ready(function () {
