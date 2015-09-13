@@ -28,7 +28,7 @@ $(document).ready(function () {
 	setFooter();
 
 	$('.label').on('click', function () {
-		document.location.href = $(this).attr('url');
+		document.location.href = $(this).attr('url').replace('images','full_size');
 	})
 
 	// $('.next').on('click', function () {
