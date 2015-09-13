@@ -22,13 +22,13 @@ $(document).ready(function () {
 	$('.pause').on('click', function () {pause();})
 
 	$('img').on('click', function () {
-		window.open($(this).attr('src'), '_blank');
+		window.open($(this).attr('src').replace('images','full_size'), '_blank');
 	})
 
 	setFooter();
 
 	$('.label').on('click', function () {
-		document.location.href = $(this).attr('url').replace('images','full_size');
+		document.location.href = $(this).attr('url');
 	})
 
 	// $('.next').on('click', function () {
