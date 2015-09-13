@@ -300,6 +300,8 @@ a {
 	/*text-shadow: 2px 2px 1px #000;*/
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1.1em;
+	font-weight: 200;
+	letter-spacing: 1.2;
 	top: 70%;
 	/*left: 20;*/
 	opacity: 0;
