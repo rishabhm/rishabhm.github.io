@@ -256,7 +256,7 @@ body {
 .scroll_images img {
 	max-width: calc(100% - 20px);
 	display: inline-block;
-	margin: 0 10px;
+	margin: 5px 10px;
 	vertical-align: middle;
 }
 
