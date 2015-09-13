@@ -106,8 +106,9 @@ function connect_links() {
 	$('.item_box').each(function (i, o) {
 		$(o).on('click', function () {
 			var url = $(this).attr('url');
-			// window.open(url, '_blank');
-			document.location.href = url;
+			if (url.trim().length > 0) {
+				document.location.href = url;
+			}
 		})
 	})
 }
