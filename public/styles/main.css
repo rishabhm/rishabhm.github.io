@@ -4,6 +4,8 @@ body {
 	/*padding-top: 70px;*/
 }
 
+
+
 .menu {
 	position: fixed;
 	top: 0;
@@ -494,4 +496,8 @@ a {
   box-shadow: 
     0 0.25em 0 0 black,
     0 0.5em 0 0 black;
+}
+
+#splash_container {
+	margin-top: 0;	
 }
