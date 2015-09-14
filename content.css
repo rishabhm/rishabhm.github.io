@@ -78,6 +78,7 @@ body {
 .footer {
 	position: fixed;
 	bottom: 10;
+	width: 22%;
 }
 
 .name {

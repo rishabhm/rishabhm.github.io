@@ -425,6 +425,14 @@ a {
 		text-align: center;
 	}
 
+	#projects_container .blank_box_1 {
+		display: none;
+	}
+
+	#graphics_container .blank_box_2 {
+		display: none;
+	}
+
 	.blank_box_2, .blank_box_1 {
 		display: none;
 	}
