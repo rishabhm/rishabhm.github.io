@@ -118,6 +118,6 @@ function pause() {
 }
 
 function setFooter() {
-	var footer_content = '<div class="name">tanya makker</div><div class="label" url="/index.html#splash_container">home</div><div class="label" url="/index.html#projects_container">projects</div><div class="label" url="/index.html#studies_container">studies</div><div class="label" url="/index.html#graphics_container">graphics</div><div class="label" url="/index.html#about_container">me</div>';
+	var footer_content = '<div class="name">tanya makker</div><div class="label" url="/index.html#splash_container">home</div><div class="label" url="/index.html#projects_container">architecture</div><div class="label" url="/index.html#studies_container">studies</div><div class="label" url="/index.html#graphics_container">graphics</div><div class="label" url="/index.html#about_container">me</div>';
 	$('.footer').html(footer_content);
 }
