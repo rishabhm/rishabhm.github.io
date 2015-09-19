@@ -8,7 +8,7 @@ var section_locations = [];
 
 $(document).ready(function () {
 
-	
+
 	$('.mhidden').each(function (i,o) {
 		$(o).css('opacity', '1');
 	})
@@ -153,7 +153,7 @@ function set_section_locations() {
 function update_dots() {
 	var dot_idx = -1;
 	var curr_scroll_y = window.scrollY;
-	for (var i=sections.length - 1; i>=0; i--) {
+	for (var i=sections.length; i>=0; i--) {
 		if (curr_scroll_y >= section_locations[i]) {
 			$('.dot').each(function (idx, o) {
 				$(o).removeClass('dot_selected');
