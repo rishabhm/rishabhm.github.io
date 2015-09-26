@@ -565,7 +565,7 @@ a {
 
 .section_text_content > div {
 	margin-right: 10px;
-	display: inline-block;
+	display: inline-block; !important
 }
 
 .section_text_content a {
@@ -583,6 +583,10 @@ a {
 	display: inline-block;
 	/*width: 180px;*/
 	text-align: left;
+}
+
+#resume_container {
+	display: block;
 }
 
 .resume_container div {
