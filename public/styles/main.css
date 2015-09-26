@@ -563,9 +563,9 @@ a {
 	vertical-align: middle;
 }
 
-.section_text_content div {
-	margin: 10px;
-	/*display: inline-block;*/
+.section_text_content > div {
+	margin-right: 10px;
+	display: inline-block;
 }
 
 .section_text_content a {
@@ -575,12 +575,22 @@ a {
 
 .section_text_content .image_container {
 	display: inline-block;
-	width: 50px;
+	/*width: 50px;*/
 	text-align: right;
 }
 
 .section_text_content .text_container {
 	display: inline-block;
-	width: 180px;
+	/*width: 180px;*/
 	text-align: left;
+}
+
+.resume_container div {
+	display: block;
+}
+
+.resume_container img {
+	width: 90%;
+	height: inherit;
+	margin: 5px;
 }
